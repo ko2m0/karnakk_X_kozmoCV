@@ -1,0 +1,309 @@
+@import "k-master";
+@import "primarycolor";
+.olbg1{
+    min-height: 80vh;
+    background-image: url('https://s3.amazonaws.com/itadevelopers-assets/IMG_gral/foto-fachada2.jpg');
+    background-size: 100% 90%;
+    background-position: center -35%;
+    &:before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #243547;
+        opacity: 0.8;
+    }
+    @media screen and (max-width:425px){
+        background-image: url('/media/img/rotterdam.jpg');
+    }
+}
+
+.olcorp-txt4covr{
+    position: absolute;
+    bottom: 0;
+}
+
+.olcorp-covrtxt-txt{
+    font-size: 2.5em;
+    padding-bottom: 7%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 3px #000;
+}
+
+.olcorp-svg-bg{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+}
+
+#KMenuNavbar{
+    a{
+    text-decoration: none;
+        border-right: 1px solid @duocolor;
+        }
+}
+
+.iflex{
+    display: flex;
+}
+
+.flexxed(@grow: 0;@shrink: 0;@basis: 0%){
+    -webkit-box-flex: @grow;
+    -ms-flex: @arguments;
+    flex: @arguments;
+}
+
+.sim{
+    .flexxed(1; 1; 10%);
+}
+
+#k2-intro{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.k2-intro-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/media/img/coolbeach.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        filter: contrast(80);
+        top: 0;
+        left: 0;
+        background-color: #609360;
+    }
+    
+    h1{
+        position: relative;
+        font-size: 7em;
+        transform: skewY(-8deg);
+            z-index: 1;
+    }
+    p{
+        position: relative;
+        font-size: 5em;
+        transform: skewY(-8deg);
+            z-index: 1;
+    }
+}
+
+#k2-beard{
+    position: relative;
+    display: inline-block;
+}
+
+.k2-intro-center{
+    height: 100vh;
+    #flexxer;
+    #flexxer-column;
+    .just-center;
+    .align-center;
+    a{
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+.k2-main-menu{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    padding: 10px 0;
+    z-index: 101;
+    border-radius: 3px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: 0.3s;
+    .fa-reorder{
+        padding: 0 10px;
+    }
+    .fa-times{
+        padding: 0 10px;
+        display: none;
+    }
+    ul{
+        #flexxer;
+        #flexxer-row;
+        .just-around;
+        .align-center;
+        margin: 0;
+        li{
+            padding: 0 50px;
+            span{
+                padding: 0 8px;
+                &:hover{
+                    .trescolor-txt;
+                }
+            }
+        }
+        a{
+            display: table;
+            text-decoration: none;
+        }
+    }
+}
+
+.k2-mainmenu-menu{
+    width: 0;
+    position: relative;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+/*
+.k2-mainmenu-menu{
+    display: none;
+    transition: 0.2s;
+    width: 0;
+    margin: 0 20px;
+    transition: all 2s;
+    &.active{
+    width: 90vw;
+    display: grid;
+        margin: 0;
+        padding: 0;
+}
+
+}
+*/
+
+.k-progressbar{
+    height: 25px;
+    position: relative;
+    .quinquecolor-bg;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    span{
+        display: block;
+        height: 100%;
+        .duocolor-bg;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+}
+
+.k2-xtra-credits{
+    ul{
+        #flexxer;
+        #flexxer-row;
+        .just-around;
+        .align-center;
+    }
+    p{
+        margin: 15px 0;
+    }
+}
+
+#k-img-galore{
+    img{
+        padding: 0 5px;
+    }
+}
+
+.xperience-date{
+    hr{
+        margin: 5px 0;
+        padding: 0;
+        height: 2px;
+        width: 100%;
+        border: none;
+    }
+}
+
+.xperience-calendar{
+    vertical-align: middle;
+    padding-top: 2%;
+}
+
+.xperience-calendar-small{
+    vertical-align: middle;
+    padding-top: 10%;
+}
+
+.k-parallax-bg1{
+    position: relative;
+    display: inline-block;
+    height: 10vh;
+    width: 100%;
+}
+
+.kbg1{
+    background-image: url(/media/img/landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.k2-social{
+    ul{
+        #flexxer;
+        #flexxer-row;
+        .just-around;
+        .align-center
+    }
+}
+
+/**/
+
+.k2-main-mob-menu{
+    position: fixed;
+    padding: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: fadeout(@unuscolor, 10%);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+    a{
+        padding: 15px;
+        text-decoration: none;
+        font-size: 1.5em;
+        .albus-txt;
+        display: block;
+        transition: 0.01s;
+        border-bottom: 2px solid @duocolor;
+        &:active{
+            background-color: @albus;
+        }
+    }
+}
+
+.mobmenuclose{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+
