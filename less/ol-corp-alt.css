@@ -1156,7 +1156,8 @@ footer a:hover {
   top: 0;
   left: 0;
   background-image: url(/media/img/coolbeach.jpg);
-  background-position: center 0;
+  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
@@ -1172,18 +1173,6 @@ footer a:hover {
   top: 0;
   left: 0;
   background-color: #609360;
-}
-.k2-intro-bg h1 {
-  position: relative;
-  font-size: 7em;
-  transform: skewY(-8deg);
-  z-index: 1;
-}
-.k2-intro-bg p {
-  position: relative;
-  font-size: 5em;
-  transform: skewY(-8deg);
-  z-index: 1;
 }
 #k2-beard {
   position: relative;
@@ -1210,6 +1199,41 @@ footer a:hover {
 .k2-intro-center a {
   z-index: 1;
   cursor: pointer;
+}
+.k2-text-container {
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+.k2-text-container a {
+  z-index: 1;
+  cursor: pointer;
+}
+.k2-text-container h1 {
+  position: relative;
+  font-size: 7vw;
+  font-weight: bolder;
+  transform: skewY(-8deg);
+  z-index: 1;
+}
+.k2-text-container p {
+  position: relative;
+  font-size: 3vw;
+  transform: skewY(-8deg);
+  z-index: 1;
 }
 .k2-main-menu {
   position: fixed;
