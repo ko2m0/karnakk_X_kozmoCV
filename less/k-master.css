@@ -564,7 +564,7 @@ footer a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-#wrapit {
+.wrapit {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1010,6 +1010,12 @@ footer a:hover {
 }
 .k-padding-big {
   padding: 7vh 0;
+}
+.k-padding-small {
+  padding: 1.5vh 0;
+}
+.k-padding-tiny {
+  padding: 0.5em 0;
 }
 /* ////// ++++ modal */
 #k-wrk1 {

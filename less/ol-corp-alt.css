@@ -439,7 +439,7 @@ footer a:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-#wrapit {
+.wrapit {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -885,6 +885,12 @@ footer a:hover {
 }
 .k-padding-big {
   padding: 7vh 0;
+}
+.k-padding-small {
+  padding: 1.5vh 0;
+}
+.k-padding-tiny {
+  padding: 0.5em 0;
 }
 /* ////// ++++ modal */
 #k-wrk1 {
@@ -1344,6 +1350,8 @@ footer a:hover {
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .k2-xtra-credits p {
   margin: 15px 0;
@@ -1373,7 +1381,7 @@ footer a:hover {
   width: 100%;
 }
 .kbg1 {
-  background-image: url(/media/img/landscape.jpg);
+  background-image: url(../media/img/landscape.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -1430,4 +1438,11 @@ footer a:hover {
   position: absolute;
   top: 0;
   right: 20px;
+}
+/**/
+#k2-skills {
+  padding: 0 15px;
+}
+#k-xperience {
+  padding: 0 15px;
 }
