@@ -1184,6 +1184,9 @@ footer a:hover {
   position: relative;
   display: inline-block;
 }
+#k2-beard h6 {
+  line-height: 1.5;
+}
 .k2-intro-center {
   height: 100vh;
   display: -webkit-box;
@@ -1443,6 +1446,32 @@ footer a:hover {
 #k2-skills {
   padding: 0 15px;
 }
+#k2-skills h6 {
+  line-height: 1.5;
+}
 #k-xperience {
   padding: 0 15px;
+}
+#k2-social ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+#k2-social ul li {
+  flex: 1 1 0;
+}
+#k2-contact .zeb-12 {
+  display: contents;
 }
